@@ -14,58 +14,60 @@ function App() {
     <Container>
       <Aside />
       <Main>
-        <SearchInput />
-        <div>
-          <Typography variant='h2'>
-            Olá, Rodrigo!
-          </Typography>
-          <Typography variant='body'>
-            Veja como são suas finanças hoje.
-          </Typography>
+        <div className={styles.container}>
+          <SearchInput />
+          <div>
+            <Typography variant='h2'>
+              Olá, Rodrigo!
+            </Typography>
+            <Typography variant='body'>
+              Veja como são suas finanças hoje.
+            </Typography>
+          </div>
+          <section className={styles.grid}>
+            <Card>
+              <Card.Header>
+                Orçamento diário disponível:
+              </Card.Header>
+              <Card.Body>
+                <DailyBudget value={250} />
+              </Card.Body>
+            </Card>
+            <Card>
+              <Card.Header>
+                Progresso da meta financeira:
+              </Card.Header>
+              <Card.Body>
+                <SavingStatus percent={70} />
+              </Card.Body>
+            </Card>
+            <Card>
+              <Card.Header>
+                Orçamento diário disponível:
+              </Card.Header>
+              <Card.Body>
+                <DailyBudget value={250} />
+              </Card.Body>
+            </Card>
+            <Card>
+              <Card.Header>
+                Orçamento diário disponível:
+              </Card.Header>
+              <Card.Body>
+                <p>200</p>
+                <p>200</p>
+                <p>200</p>
+                <p>200</p>
+                <p>200</p>
+                <p>200</p>
+                <p>200</p>
+                <p>200</p>
+                <p>200</p>
+                <p>200</p>
+              </Card.Body>
+            </Card>
+          </section>
         </div>
-        <section className={styles.grid}>
-          <Card>
-            <Card.Header>
-              Orçamento diário disponível:
-            </Card.Header>
-            <Card.Body>
-              <DailyBudget value={250} />
-            </Card.Body>
-          </Card>
-          <Card>
-            <Card.Header>
-              Progresso da meta financeira:
-            </Card.Header>
-            <Card.Body>
-              <SavingStatus percent={70} />
-            </Card.Body>
-          </Card>
-          <Card>
-            <Card.Header>
-              Orçamento diário disponível:
-            </Card.Header>
-            <Card.Body>
-              <DailyBudget value={250} />
-            </Card.Body>
-          </Card>
-          <Card>
-            <Card.Header>
-              Orçamento diário disponível:
-            </Card.Header>
-            <Card.Body>
-              <p>200</p>
-              <p>200</p>
-              <p>200</p>
-              <p>200</p>
-              <p>200</p>
-              <p>200</p>
-              <p>200</p>
-              <p>200</p>
-              <p>200</p>
-              <p>200</p>
-            </Card.Body>
-          </Card>
-        </section>
       </Main>
     </Container>
   )

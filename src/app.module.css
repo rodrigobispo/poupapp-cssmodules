@@ -4,3 +4,9 @@
     gap: 20px;
     grid-template-columns: repeat(2, 1fr);
 }
+
+.container {
+    flex-direction: column;
+    display: flex;
+    gap: 25px;
+}
