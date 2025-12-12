@@ -6,6 +6,7 @@ import { Typography } from './components/Typography'
 import Card from './components/Card'
 import { DailyBudget } from './components/DailyBudget/index';
 import { SavingStatus } from './components/SavingsStatus'
+import styles from './app.module.css'
 
 function App() {
 
@@ -22,7 +23,7 @@ function App() {
             Veja como são suas finanças hoje.
           </Typography>
         </div>
-        <section>
+        <section className={styles.grid}>
           <Card>
             <Card.Header>
               Orçamento diário disponível:
@@ -37,6 +38,31 @@ function App() {
             </Card.Header>
             <Card.Body>
               <SavingStatus percent={70} />
+            </Card.Body>
+          </Card>
+          <Card>
+            <Card.Header>
+              Orçamento diário disponível:
+            </Card.Header>
+            <Card.Body>
+              <DailyBudget value={250} />
+            </Card.Body>
+          </Card>
+          <Card>
+            <Card.Header>
+              Orçamento diário disponível:
+            </Card.Header>
+            <Card.Body>
+              <p>200</p>
+              <p>200</p>
+              <p>200</p>
+              <p>200</p>
+              <p>200</p>
+              <p>200</p>
+              <p>200</p>
+              <p>200</p>
+              <p>200</p>
+              <p>200</p>
             </Card.Body>
           </Card>
         </section>
