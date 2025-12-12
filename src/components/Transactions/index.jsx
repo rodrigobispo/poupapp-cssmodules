@@ -1,10 +1,21 @@
 import { Button } from "../Button"
 import { IconCurrency } from "../icons"
 import { TransactionItem } from "../TransactionItem"
+import styles from "./transactions.module.css"
 
 export const Transactions = () => {
 
   const items = [
+    {
+      "description": "Abastecimento",
+      "value": -50,
+      "date": '2024-09-18T00:00:00-03:00'
+    },
+    {
+      "description": "iFood",
+      "value": -45,
+      "date": '2024-09-22T00:00:00-03:00'
+    },
     {
       "description": "Freela",
       "value": 1500,
@@ -19,7 +30,7 @@ export const Transactions = () => {
 
   return (
     <>
-      <ul>
+      <ul className={styles.list}>
         {items.map((transactionItem, index) => {
           return (
             <li key={index}>
