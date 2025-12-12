@@ -7,6 +7,7 @@ import Card from './components/Card'
 import { DailyBudget } from './components/DailyBudget/index';
 import { SavingStatus } from './components/SavingsStatus'
 import styles from './app.module.css'
+import { Transactions } from './components/Transactions'
 
 function App() {
 
@@ -21,13 +22,13 @@ function App() {
               Olá, Rodrigo!
             </Typography>
             <Typography variant='body'>
-              Veja como são suas finanças hoje.
+              Veja como estão suas finanças hoje.
             </Typography>
           </div>
           <section className={styles.grid}>
             <Card>
               <Card.Header>
-                Orçamento diário disponível:
+                Orçamento diário disponível
               </Card.Header>
               <Card.Body>
                 <DailyBudget value={250} />
@@ -35,7 +36,7 @@ function App() {
             </Card>
             <Card>
               <Card.Header>
-                Progresso da meta financeira:
+                Progresso da meta financeira
               </Card.Header>
               <Card.Body>
                 <SavingStatus percent={70} />
@@ -43,10 +44,10 @@ function App() {
             </Card>
             <Card>
               <Card.Header>
-                Orçamento diário disponível:
+                Movimentação financeira
               </Card.Header>
               <Card.Body>
-                <DailyBudget value={250} />
+                <Transactions />
               </Card.Body>
             </Card>
             <Card>
