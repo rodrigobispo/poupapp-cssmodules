@@ -4,6 +4,7 @@ import { Main } from './components/Main'
 import { SearchInput } from './components/SearchInput'
 import { Typography } from './components/Typography'
 import Card from './components/Card'
+import { DailyBudget } from './components/DailyBudget/index';
 
 function App() {
 
@@ -26,15 +27,14 @@ function App() {
               Orçamento diário disponível:
             </Card.Header>
             <Card.Body>
-              R$ 200,00
+              <DailyBudget value={250} />
             </Card.Body>
           </Card>
           <Card>
             <Card.Header>
-              Orçamento diário disponível:
+              Progresso da meta financeira:
             </Card.Header>
             <Card.Body>
-              R$ 200,00
             </Card.Body>
           </Card>
         </section>
