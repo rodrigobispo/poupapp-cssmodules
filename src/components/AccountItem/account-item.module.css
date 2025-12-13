@@ -1,40 +1,24 @@
 .account {
-    color: var(--neutral-text)
+    display: flex;
+    justify-content: space-between;
+    color: var(--neutral-text);
 }
 
 .account p {
     margin: 0;
-    gap: 8px;
-    display: flex;
-}
-
-.account p.bank {
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.account .balance {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-}
-
-.account .balance .label {
     font-size: 15px;
-    opacity: 0.8;
-}
-
-.account .balance .value {
-    font-weight: 600;
-    font-variant-numeric: tabular-nums; /* 🔥 MUITO importante */
+    line-height: 120%;
 }
 
 .details {
-    display: grid;
-    grid-template-columns: 1fr 110px;
+    display: flex;
+    flex-direction: column;
     gap: 8px;
-    font-size: 15px;
-    line-height: 120%;
-    font-weight: 500;
+    width: 100px;
 }
 
+.bank {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
