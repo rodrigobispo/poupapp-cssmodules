@@ -7,12 +7,14 @@ export const AccountItem = ({ item }) => {
 
   return (
     <div className={styles.account}>
+      <p className={styles.bank}>
+        <IconBank />
+        <strong>{item.bank}</strong>
+      </p>
+
       <div className={styles.details}>
-        <p className={styles.bank}><IconBank /> {item.bank}</p>
-        <div className={styles.balance}>
-          <span className={styles.label}>Saldo</span>
-          <span className={styles.value}>{formatter.format(item.balance)}</span>
-        </div>
+        <p><span className={styles.label}>Saldo</span></p>
+        <p>{formatter.format(item.balance)}</p>
       </div>
     </div>
   )

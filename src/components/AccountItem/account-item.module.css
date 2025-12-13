@@ -1,5 +1,7 @@
 .account {
-    color: var(--neutral-text)
+    display: flex;
+    justify-content: space-between;
+    color: var(--neutral-text);
 }
 
 .account p {
@@ -8,33 +10,20 @@
     display: flex;
 }
 
-.account p.bank {
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.account .balance {
+.details {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    gap: 3px;
+    width: 100px;
 }
 
-.account .balance .label {
+.bank {
+    display: flex;
+    gap: 8px;
+    align-items: top;
+}
+
+.account .label {
     font-size: 15px;
     opacity: 0.8;
 }
-
-.account .balance .value {
-    font-weight: 600;
-    font-variant-numeric: tabular-nums; /* 🔥 MUITO importante */
-}
-
-.details {
-    display: grid;
-    grid-template-columns: 1fr 110px;
-    gap: 8px;
-    font-size: 15px;
-    line-height: 120%;
-    font-weight: 500;
-}
-

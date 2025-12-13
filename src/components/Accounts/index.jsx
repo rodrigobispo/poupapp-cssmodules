@@ -8,7 +8,7 @@ export const Accounts = () => {
   const items = [
     { bank: "Caixa", balance: 1200 },
     { bank: "Santander", balance: 800 },
-    { bank: "Itaú", balance: 1800000 },
+    { bank: "Itaú", balance: 11000 },
     { bank: "Banco do Brasil", balance: 40 }
   ]
 
