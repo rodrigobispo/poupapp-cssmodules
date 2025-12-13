@@ -52,7 +52,7 @@ function App() {
             </Card>
             <Card>
               <Card.Header>
-                Orçamento diário disponível:
+                Minhas contas
               </Card.Header>
               <Card.Body>
                 <p>200</p>
