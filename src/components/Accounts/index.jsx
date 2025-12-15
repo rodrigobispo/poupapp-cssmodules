@@ -1,7 +1,7 @@
 import { AccountItem } from '../AccountItem'
 import { Button } from '../Button'
 import { IconWallet } from '../icons'
-import styles from './account.module.css'
+import styles from './accounts.module.css'
 
 export const Accounts = () => {
 
